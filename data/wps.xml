@@ -40,6 +40,10 @@
       <factoryClass>org.geotools.process.geometry.PolygonLabelProcess</factoryClass>
       <enabled>true</enabled>
     </processGroup>
+    <processGroup>
+      <factoryClass>org.geonode.process.batchdownload.BatchDownloadFactory</factoryClass>
+      <enabled>true</enabled>
+    </processGroup>
   </processGroups>
   <catalogMode>HIDE</catalogMode>
   <maxComplexInputSize>0</maxComplexInputSize>

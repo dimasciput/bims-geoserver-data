@@ -1,0 +1,43 @@
+title: 'pointstacker'
+feature-styles:
+- transform:
+    name: vec:PointStacker
+    params:
+      cellSize: 10
+  rules:
+  - name: '1 site'
+    filter: count = 1
+    symbolizers:
+    - point:
+        size: 10
+        symbols:
+        - mark:
+            shape: circle
+            fill-color: '#39B2A3'
+  - name: '2-100'
+    filter: count > 1 AND count <= 100
+    symbolizers:
+    - point:
+        size: 20
+        symbols:
+        - mark:
+            shape: circle
+            fill-color: '#e8e251'
+  - name: '101-500'
+    filter: count > 100 AND count <= 500
+    symbolizers:
+    - point:
+        size: 30
+        symbols:
+        - mark:
+            shape: circle
+            fill-color: '#bd9524'
+  - name: '>500'
+    filter: count > 500
+    symbolizers:
+    - point:
+        size: 40
+        symbols:
+        - mark:
+            shape: circle
+            fill-color: '#9a791d'
